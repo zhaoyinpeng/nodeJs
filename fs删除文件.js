@@ -30,6 +30,8 @@ function deleteFolderRecursive(path) {
       }
     });
     fs.rmdirSync(path);
+  } else {
+    console.log('文件不存在')
   }
 }
 deleteFolderRecursive('./test')
