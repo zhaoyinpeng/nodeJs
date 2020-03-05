@@ -62,3 +62,13 @@ helloWorld.js文件
   let aa = xx.a
   //xx就相当于引入将模块中的所有暴露东西添加了顶层变量,用于防止污染全局变量
 ```
+
+## 模板引擎
+* EJS 后台模板引擎
+
+## Express框架！！！ 跟jq之于js一样
+* 路由router express中的路由（中间件）匹配后会阻塞下面的匹配
+* 路由中不分大小写，所有参数？都已被忽略
+
+* app.get app.post app.delete等
+* app.use 也是中间件，但是不同于get，post，是模糊匹配

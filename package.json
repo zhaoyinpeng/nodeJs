@@ -4,6 +4,8 @@
   "description": "node.js",
   "main": "fs写文件.js",
   "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
     "silly-datetime": "^0.1.2"
   },
   "devDependencies": {},
