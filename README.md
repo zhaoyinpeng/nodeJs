@@ -43,7 +43,7 @@ helloWorld.js文件
   fs.readFile(__dirname+'/1.txt',function(err,data){
     console.log(data.toString())
   })
-
+```
 ## module模块
 
 ```
@@ -71,4 +71,15 @@ helloWorld.js文件
 * 路由中不分大小写，所有参数？都已被忽略
 
 * app.get app.post app.delete等
-* app.use 也是中间件，但是不同于get，post，是模糊匹配
+  * 解析post参数时用body-parse插件
+  * 如果是复杂表单，或者文件，还是使用formidable
+* app.use 也是中间件，是get和post的扩展，但是不同于get，post，是模糊匹配
+  * app.use可以很容易做静态资源服务，它给的东西，第三方都能提供
+* res.render() 渲染页面 ejs用到过，应该也可以渲染html
+* res.send() 可以返回各种类型数据
+
+* littleAlbum 小相册程序
+  * 注意里面的模块化分割模式
+    * app.js 总管理
+    * controller 路由
+    * models 各个模块，做具体的事情，所有逻辑放这里

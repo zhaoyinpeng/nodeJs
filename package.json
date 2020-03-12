@@ -4,8 +4,12 @@
   "description": "node.js",
   "main": "fs写文件.js",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "gm": "^1.23.1",
+    "mongodb": "^3.5.4",
     "silly-datetime": "^0.1.2"
   },
   "devDependencies": {},
