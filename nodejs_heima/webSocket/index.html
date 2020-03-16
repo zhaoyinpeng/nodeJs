@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>index页面，引入了秘密的socket script文件</h1>
+  <!-- 引包 -->
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script>
+    let socket = io()
+    socket.emit('tiwen', 'helloWorld');
+    socket.on('huida', (msg) => {
+      console.log('服务器说：' + msg)
+    })
+  </script>
+</body>
+
+</html>
