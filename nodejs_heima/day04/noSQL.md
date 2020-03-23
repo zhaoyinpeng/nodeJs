@@ -23,3 +23,5 @@
  * db.xxx 创建集合 或者使用集合
   * show collections 显示集合
   * db.student.insert({"name":"xiaoming","age":12}) 创建数据，添加到student集合中
+  * db.student.find({}) 显示student当前集合中的所有数据
+  * db.student.find({}).count() 显示student当前集合中所有数据的数量

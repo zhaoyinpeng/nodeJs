@@ -10,6 +10,7 @@
     "express-session": "^1.17.0",
     "gm": "^1.23.1",
     "mongodb": "^3.5.4",
+    "mongoose": "^5.9.4",
     "silly-datetime": "^0.1.2"
   },
   "devDependencies": {},
